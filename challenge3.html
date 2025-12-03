@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 3 - Tableau de tarification</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pricing-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(6px);
+}
+
+.card.special {
+  border: 2px solid #007bff;
+}
+
+.price {
+  color: #007bff;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  color: #555;
+  margin: 6px 0;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="pricing-container">
+    <h1>Nos Offres</h1>
+    <div class="pricing-cards">
+
+      <div class="card">
+        <h2>Basique</h2>
+        <p class="price">5€ / mois</p>
+        <ul>
+          <li>1 utilisateur</li>
+          <li>1 Go de stockage</li>
+          <li>Support standard</li>
+        </ul>
+        <button>Souscrire</button>
+      </div>
+
+      <div class="card special">
+        <h2>Standard</h2>
+        <p class="price">12€ / mois</p>
+        <ul>
+          <li>5 utilisateurs</li>
+          <li>10 Go de stockage</li>
+          <li>Support prioritaire</li>
+        </ul>
+        <button>Souscrire</button>
+      </div>
+
+      <div class="card">
+        <h2>Premium</h2>
+        <p class="price">25€ / mois</p>
+        <ul>
+          <li>Utilisateurs illimités</li>
+          <li>100 Go de stockage</li>
+          <li>Support 24/7</li>
+        </ul>
+        <button>Souscrire</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
